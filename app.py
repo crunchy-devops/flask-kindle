@@ -11,7 +11,7 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
+app.config['MAX_CONTENT_LENGTH'] = 1024* 1024 * 1024  # 1GB max file size
 app.config['SECRET_KEY'] = 'votre-cle-secrete-ici'  # Nécessaire pour flash messages
 
 
